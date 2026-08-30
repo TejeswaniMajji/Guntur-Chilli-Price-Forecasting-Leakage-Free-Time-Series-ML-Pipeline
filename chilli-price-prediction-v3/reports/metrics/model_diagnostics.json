@@ -1,0 +1,290 @@
+{
+  "monthly_h1": {
+    "model": "random_forest",
+    "feature_pool": "domestic_only",
+    "n_holdout": 31,
+    "holdout_mae": 13.575355460835286,
+    "top_features": {
+      "wx_temperatures_min": 0.1218,
+      "wx_temperatures_min_anom": 0.0952,
+      "wx_temp_range": 0.0656,
+      "NON_AC": -0.0,
+      "remark_down": -0.0026,
+      "remark_move_signed": -0.0029,
+      "LCA_334_Best_pctchg6": -0.006,
+      "remark_has_text": -0.0079,
+      "Total_Arivals_r12_std": -0.0181,
+      "wx_precipitation_amount": -0.0364
+    },
+    "prediction_interval_offsets_80pct": {
+      "q10": -22.107258053602436,
+      "q50_bias": -8.605909098477099,
+      "q90": 10.70498234242828
+    },
+    "note": "80% interval = point_forecast + [q10, q90]; q50 is the median residual (systematic bias, should be near 0)."
+  },
+  "monthly_h2": {
+    "model": "random_forest",
+    "feature_pool": "domestic_only",
+    "n_holdout": 31,
+    "holdout_mae": 18.01211725498884,
+    "top_features": {
+      "Total_Arivals_r12_mean": 0.948,
+      "wx_temperatures_min": 0.3861,
+      "Total_Arivals_r6_std": 0.3107,
+      "wx_temperatures_max_anom": 0.2468,
+      "wx_temperatures_min_anom": 0.1967,
+      "Total_Arivals_lag6": 0.1694,
+      "Total_Arivals_r6_mean": 0.0528,
+      "LCA_334_Best_pctchg3": 0.0517,
+      "wx_precipitation_amount_anom": 0.0489,
+      "remark_move_signed": 0.0052
+    },
+    "prediction_interval_offsets_80pct": {
+      "q10": -30.989491659032097,
+      "q50_bias": -14.344243358405294,
+      "q90": 16.735498354552817
+    },
+    "note": "80% interval = point_forecast + [q10, q90]; q50 is the median residual (systematic bias, should be near 0)."
+  },
+  "monthly_h3": {
+    "model": "random_forest",
+    "feature_pool": "domestic_only",
+    "n_holdout": 31,
+    "holdout_mae": 22.327530022601568,
+    "top_features": {
+      "Total_Arivals_r12_mean": 3.7604,
+      "wx_temperatures_max_anom": 0.5194,
+      "Total_Arivals_r6_std": 0.2157,
+      "wx_temperatures_min_anom": 0.0583,
+      "LCA_334_Best_pctchg3": 0.0556,
+      "remark_move_signed": 0.0117,
+      "wx_temperatures_min": 0.0034,
+      "NON_AC": 0.0,
+      "remark_down": -0.003,
+      "Total_Arivals_lag12": -0.0739
+    },
+    "prediction_interval_offsets_80pct": {
+      "q10": -41.17627166546663,
+      "q50_bias": -12.967700048633361,
+      "q90": 15.548652908386117
+    },
+    "note": "80% interval = point_forecast + [q10, q90]; q50 is the median residual (systematic bias, should be near 0)."
+  },
+  "monthly_h4": {
+    "model": "hist_gbm",
+    "feature_pool": "domestic_only",
+    "n_holdout": 30,
+    "holdout_mae": 46.963489866317715,
+    "top_features": {
+      "Total_Arivals_r6_std": 1.5101,
+      "wx_temperatures_min": 0.6139,
+      "Total_Arivals_lag6": 0.2413,
+      "wx_temperatures_min_anom": 0.2373,
+      "Total_Arivals_r12_mean": 0.1662,
+      "Total_Arivals_r6_mean": 0.1026,
+      "LCA_334_Best_pctchg1": 0.082,
+      "LCA_334_Best_pctchg3": 0.0681,
+      "cold_regime_mid": 0.0,
+      "remark_down": 0.0
+    },
+    "prediction_interval_offsets_80pct": {
+      "q10": -84.66450667757677,
+      "q50_bias": -40.97578832614623,
+      "q90": 13.684652853888098
+    },
+    "note": "80% interval = point_forecast + [q10, q90]; q50 is the median residual (systematic bias, should be near 0)."
+  },
+  "monthly_h5": {
+    "model": "hist_gbm",
+    "feature_pool": "with_trade",
+    "n_holdout": 30,
+    "holdout_mae": 46.55734057459405,
+    "top_features": {
+      "export_qty_yoy_growth_pct": 1.2994,
+      "Total_Arivals_r6_mean": 1.0303,
+      "Total_Arivals_r6_std": 0.4843,
+      "export_value_yoy_growth_pct": 0.2273,
+      "wx_wind_morningMax_anom": 0.1885,
+      "wx_temperatures_max_anom": 0.0278,
+      "Total_Arivals_r12_mean": 0.0113,
+      "year": 0.0,
+      "remark_move_signed": 0.0,
+      "remark_has_text": 0.0
+    },
+    "prediction_interval_offsets_80pct": {
+      "q10": -85.9736604561338,
+      "q50_bias": -42.337551809434444,
+      "q90": 21.352182908183273
+    },
+    "note": "80% interval = point_forecast + [q10, q90]; q50 is the median residual (systematic bias, should be near 0)."
+  },
+  "monthly_h6": {
+    "model": "hist_gbm",
+    "feature_pool": "with_trade",
+    "n_holdout": 30,
+    "holdout_mae": 52.634491708381155,
+    "top_features": {
+      "export_qty_yoy_growth_pct": 3.1704,
+      "Total_Arivals_r6_mean": 2.0366,
+      "wx_relativeHumidity_max": 1.5591,
+      "Total_Arivals_r12_std": 0.7554,
+      "wx_wind_average_anom": 0.492,
+      "Total_Arivals_r6_std": 0.4241,
+      "wx_temperatures_max_anom": 0.3963,
+      "remark_has_text": 0.2748,
+      "wx_temperatures_min_anom": 0.2472,
+      "export_value_yoy_growth_pct": 0.1978
+    },
+    "prediction_interval_offsets_80pct": {
+      "q10": -91.66283825464946,
+      "q50_bias": -50.37457702020461,
+      "q90": 10.229160362733344
+    },
+    "note": "80% interval = point_forecast + [q10, q90]; q50 is the median residual (systematic bias, should be near 0)."
+  },
+  "weekly_h1": {
+    "model": "random_forest",
+    "feature_pool": "with_trade",
+    "n_holdout": 123,
+    "holdout_mae": 4.835267604139296,
+    "top_features": {
+      "LCA_334_Best_pctchg1": 0.2309,
+      "Total_Arivals_r12_std": 0.058,
+      "Total_Arivals_r8_std": 0.037,
+      "LCA_334_Best_pctchg4": 0.0191,
+      "wx_solar_amount_anom": 0.0173,
+      "LCA_334_Best_r4_z": 0.0124,
+      "Total_Arivals": 0.0099,
+      "remark_up": 0.0011,
+      "remark_move_signed": -0.0006,
+      "remark_steady": -0.001
+    },
+    "prediction_interval_offsets_80pct": {
+      "q10": -7.995206897161944,
+      "q50_bias": -0.8870167470395245,
+      "q90": 5.103177267091257
+    },
+    "note": "80% interval = point_forecast + [q10, q90]; q50 is the median residual (systematic bias, should be near 0)."
+  },
+  "weekly_h2": {
+    "model": "random_forest",
+    "feature_pool": "domestic_only",
+    "n_holdout": 123,
+    "holdout_mae": 8.164292589103606,
+    "top_features": {
+      "LCA_334_Best_pctchg1": 0.2442,
+      "Total_Arivals": 0.2109,
+      "Total_Arivals_r8_std": 0.1971,
+      "wx_solar_amount_anom": 0.1154,
+      "LCA_334_Best_r4_std": 0.094,
+      "wx_relativeHumidity_min_anom": 0.0504,
+      "Total_Arivals_r12_std": 0.0466,
+      "Total_Arivals_r4_std": 0.0137,
+      "wx_temperatures_max_anom": 0.0124,
+      "wx_temp_range": 0.0048
+    },
+    "prediction_interval_offsets_80pct": {
+      "q10": -12.47319852761703,
+      "q50_bias": -2.20734189835332,
+      "q90": 11.266897319056866
+    },
+    "note": "80% interval = point_forecast + [q10, q90]; q50 is the median residual (systematic bias, should be near 0)."
+  },
+  "weekly_h3": {
+    "model": "ridge",
+    "feature_pool": "domestic_only",
+    "n_holdout": 123,
+    "holdout_mae": 12.17976867301036,
+    "top_features": {
+      "LCA_334_Best_r4_std": 1.7624,
+      "wx_temp_range": 1.4412,
+      "wx_solar_amount_anom": 1.2883,
+      "Total_Arivals_r8_std": 1.2641,
+      "remark_move_signed": 1.2394,
+      "wx_precipitation_amount": 1.1674,
+      "wx_relativeHumidity_min_anom": 1.0743,
+      "wx_relativeHumidity_min": 1.0209,
+      "wx_temperatures_max_anom": 0.8893,
+      "LCA_334_Best_pctchg1": 0.7178
+    },
+    "prediction_interval_offsets_80pct": {
+      "q10": -20.360900438026384,
+      "q50_bias": -4.2571561863935585,
+      "q90": 17.040595418007246
+    },
+    "note": "80% interval = point_forecast + [q10, q90]; q50 is the median residual (systematic bias, should be near 0)."
+  },
+  "weekly_h4": {
+    "model": "ridge",
+    "feature_pool": "domestic_only",
+    "n_holdout": 123,
+    "holdout_mae": 15.21799994821625,
+    "top_features": {
+      "wx_temp_range": 3.0814,
+      "wx_solar_amount_anom": 2.6372,
+      "wx_relativeHumidity_min": 2.3141,
+      "LCA_334_Best_r4_std": 2.119,
+      "wx_temp_range_anom": 2.0399,
+      "Total_Arivals_r8_std": 1.5965,
+      "wx_temperatures_min": 1.291,
+      "remark_move_signed": 1.143,
+      "wx_solar_amount": 1.0039,
+      "wx_relativeHumidity_min_anom": 0.6681
+    },
+    "prediction_interval_offsets_80pct": {
+      "q10": -24.064517674015633,
+      "q50_bias": -5.57520335980908,
+      "q90": 17.353481943661762
+    },
+    "note": "80% interval = point_forecast + [q10, q90]; q50 is the median residual (systematic bias, should be near 0)."
+  },
+  "weekly_h6": {
+    "model": "ridge",
+    "feature_pool": "domestic_only",
+    "n_holdout": 122,
+    "holdout_mae": 19.507622269543774,
+    "top_features": {
+      "LCA_334_Best_r4_std": 3.1817,
+      "Total_Arivals_r8_std": 2.9183,
+      "year": 2.1506,
+      "wx_temperatures_max_anom": 1.5891,
+      "wx_temperatures_min": 1.5522,
+      "wx_relativeHumidity_min": 1.3995,
+      "wx_precipitation_amount": 1.3025,
+      "wx_temp_range": 1.2715,
+      "remark_down": 1.1854,
+      "wx_relativeHumidity_min_anom": 0.9689
+    },
+    "prediction_interval_offsets_80pct": {
+      "q10": -33.02912448531633,
+      "q50_bias": -11.142486094852998,
+      "q90": 12.917150325200957
+    },
+    "note": "80% interval = point_forecast + [q10, q90]; q50 is the median residual (systematic bias, should be near 0)."
+  },
+  "weekly_h8": {
+    "model": "ridge",
+    "feature_pool": "domestic_only",
+    "n_holdout": 122,
+    "holdout_mae": 19.912856556249608,
+    "top_features": {
+      "wx_relativeHumidity_min_anom": 2.911,
+      "NON_AC": 2.5666,
+      "Total_Arivals_r8_std": 2.3507,
+      "Total_Arivals_r4_std": 2.169,
+      "remark_down": 2.0438,
+      "wx_temperatures_min": 1.7895,
+      "year": 1.7481,
+      "LCA_334_Best_r8_z": 1.6615,
+      "Total_Arivals_r12_std": 1.242,
+      "remark_has_text": 0.9268
+    },
+    "prediction_interval_offsets_80pct": {
+      "q10": -38.51877477453643,
+      "q50_bias": -13.720481473430027,
+      "q90": 6.334173998471652
+    },
+    "note": "80% interval = point_forecast + [q10, q90]; q50 is the median residual (systematic bias, should be near 0)."
+  }
+}

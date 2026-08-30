@@ -1,0 +1,229 @@
+{
+  "price_overview": {
+    "n_daily_obs": 2770,
+    "date_range": [
+      "2012-02-15",
+      "2025-02-13"
+    ],
+    "min": 42.0,
+    "max": 282.5,
+    "mean": 114.78483754512635,
+    "median": 105.5,
+    "std": 57.261701043085864,
+    "cv_pct": 49.88611934095745
+  },
+  "trading_calendar": {
+    "trading_days_by_month": {
+      "1": 247,
+      "2": 255,
+      "3": 250,
+      "4": 220,
+      "5": 82,
+      "6": 202,
+      "7": 252,
+      "8": 256,
+      "9": 228,
+      "10": 240,
+      "11": 270,
+      "12": 268
+    },
+    "peak_month": 11,
+    "trough_month": 5
+  },
+  "price_seasonality": {
+    "monthly_mean": {
+      "1": 119.78,
+      "2": 109.49,
+      "3": 105.34,
+      "4": 100.57,
+      "5": 110.66,
+      "6": 107.11,
+      "7": 114.35,
+      "8": 115.17,
+      "9": 125.27,
+      "10": 119.92,
+      "11": 123.6,
+      "12": 120.38
+    },
+    "cheapest_month": 4,
+    "most_expensive_month": 9,
+    "seasonal_swing_pct": 21.612203300121383
+  },
+  "trend_and_volatility": {
+    "yearly_mean_price": {
+      "2012": 52.25,
+      "2013": 60.29,
+      "2014": 68.03,
+      "2015": 93.47,
+      "2016": 109.44,
+      "2017": 56.51,
+      "2018": 82.25,
+      "2019": 105.45,
+      "2020": 123.77,
+      "2021": 116.18,
+      "2022": 221.6,
+      "2023": 219.46,
+      "2024": 158.87,
+      "2025": 133.04
+    },
+    "weekly_return_std_pct": 3.7011477829167174,
+    "weekly_return_mean_pct": 0.09638381091063132,
+    "max_weekly_drop_pct": -24.742268041237114,
+    "max_weekly_jump_pct": 16.971713810316125
+  },
+  "supply_relationship": {
+    "corr_price_arrivals": 0.18844013099797888,
+    "corr_price_log_arrivals": 0.20447697223094025
+  },
+  "weather_relationship": {
+    "n_weeks_with_weather": 286,
+    "correlations": {
+      "temperatures_max": -0.156,
+      "wind_dayMax": -0.141,
+      "wind_average": -0.13,
+      "wind_morningMax": -0.102,
+      "temp_range": -0.09,
+      "solar_amount": -0.09,
+      "temperatures_min": -0.085,
+      "precipitation_amount": 0.033,
+      "relativeHumidity_max": 0.047,
+      "relativeHumidity_min": 0.107
+    }
+  },
+  "cold_storage_relationship": {
+    "corr_price_guntur_share_pct": -0.5284044805209442,
+    "corr_price_guntur_bags": -0.25959968186075044
+  },
+  "remark_sentiment_validation": {
+    "n_up_days": 359,
+    "mean_fwd_5d_return_after_up_pct": 1.343438533479546,
+    "n_down_days": 353,
+    "mean_fwd_5d_return_after_down_pct": -0.9710506480337708,
+    "n_steady_days": 1019,
+    "mean_fwd_5d_return_after_steady_pct": 0.05857569668866355
+  },
+  "missingness_pct": {
+    "LCA_334_Best": 2.53,
+    "Total_Arivals": 0.18,
+    "wx_temperatures_max": 52.96,
+    "cold_guntur_bags_lakh": 2.89,
+    "inflation_cpi_pct": 0.0
+  },
+  "autocorrelation": {
+    "weekly_return_acf_lag1_8": [
+      0.287,
+      0.068,
+      0.033,
+      -0.032,
+      -0.067,
+      -0.054,
+      0.082,
+      0.133
+    ],
+    "significant_lags_95pct": [
+      1,
+      7,
+      8,
+      9
+    ]
+  },
+  "trade_dynamics": {
+    "note": "Export/exchange-rate series are annual (export) or annual-average (USD/INR); correlated here against each calendar year's mean domestic price. See data/external/*.csv for sourcing and reports/ANALYSIS_REPORT.md Limitations for the fiscal-year-vs-calendar-year and known-from-date simplifications this implies.",
+    "n_years": 14,
+    "corr_price_export_qty": 0.6534040156133835,
+    "corr_price_export_value": 0.8580989249919008,
+    "corr_price_usd_inr": 0.8268773145560838,
+    "peak_price_year": 2022,
+    "top2_export_value_years": [
+      2023,
+      2024
+    ],
+    "peak_price_year_in_top2_export_years": false,
+    "yearly_series": {
+      "2012": {
+        "price_mean": 52.25,
+        "export_qty_tonnes": 291614.5,
+        "export_value_rs_lakh": 234361.1,
+        "usd_inr_avg": 53.06
+      },
+      "2013": {
+        "price_mean": 60.29,
+        "export_qty_tonnes": 309284.4,
+        "export_value_rs_lakh": 262673.5,
+        "usd_inr_avg": 54.78
+      },
+      "2014": {
+        "price_mean": 68.03,
+        "export_qty_tonnes": 338178.1,
+        "export_value_rs_lakh": 331385.6,
+        "usd_inr_avg": 60.95
+      },
+      "2015": {
+        "price_mean": 93.47,
+        "export_qty_tonnes": 347381.9,
+        "export_value_rs_lakh": 388394.2,
+        "usd_inr_avg": 66.79
+      },
+      "2016": {
+        "price_mean": 109.44,
+        "export_qty_tonnes": 385953.3,
+        "export_value_rs_lakh": 477985.3,
+        "usd_inr_avg": 67.63
+      },
+      "2017": {
+        "price_mean": 56.51,
+        "export_qty_tonnes": 431087.3,
+        "export_value_rs_lakh": 449538.9,
+        "usd_inr_avg": 64.94
+      },
+      "2018": {
+        "price_mean": 82.25,
+        "export_qty_tonnes": 461780.6,
+        "export_value_rs_lakh": 509573.5,
+        "usd_inr_avg": 70.64
+      },
+      "2019": {
+        "price_mean": 105.45,
+        "export_qty_tonnes": 479984.1,
+        "export_value_rs_lakh": 601170.2,
+        "usd_inr_avg": 72.15
+      },
+      "2020": {
+        "price_mean": 123.77,
+        "export_qty_tonnes": 609221.3,
+        "export_value_rs_lakh": 850203.2,
+        "usd_inr_avg": 74.31
+      },
+      "2021": {
+        "price_mean": 116.18,
+        "export_qty_tonnes": 582297.6,
+        "export_value_rs_lakh": 876282.2,
+        "usd_inr_avg": 75.45
+      },
+      "2022": {
+        "price_mean": 221.6,
+        "export_qty_tonnes": 526737.4,
+        "export_value_rs_lakh": 996477.2,
+        "usd_inr_avg": 81.62
+      },
+      "2023": {
+        "price_mean": 219.46,
+        "export_qty_tonnes": 578209.5,
+        "export_value_rs_lakh": 1194063.9,
+        "usd_inr_avg": 83.05
+      },
+      "2024": {
+        "price_mean": 158.87,
+        "export_qty_tonnes": 685096.5,
+        "export_value_rs_lakh": 1169394.2,
+        "usd_inr_avg": 83.68
+      },
+      "2025": {
+        "price_mean": 133.04,
+        "export_qty_tonnes": 715506.0,
+        "export_value_rs_lakh": 1140490.0,
+        "usd_inr_avg": 87.0
+      }
+    }
+  }
+}

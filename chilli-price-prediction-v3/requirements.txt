@@ -1,0 +1,30 @@
+# Core
+numpy>=1.26,<2.4
+pandas>=2.2,<2.4
+scikit-learn>=1.3,<1.8
+scipy>=1.11,<1.17
+openpyxl>=3.1,<4.0          # reads Inflation_India.xlsx
+joblib>=1.3,<2.0
+
+# Visualization
+matplotlib>=3.8,<3.11
+seaborn>=0.13,<0.14
+
+# Dashboard / API
+streamlit>=1.36,<1.49
+fastapi>=0.110,<0.120
+uvicorn>=0.29,<0.35
+pydantic>=2.5,<3.0
+
+# Dev / test
+pytest>=7.0,<9.0
+black>=24.0,<25.0
+flake8>=6.0,<7.0
+
+python-dotenv>=0.21,<1.0
+
+# Optional local-only model upgrades (not required -- see src/models/train.py's commented
+# hook). Uncomment either if you have them installed and want to compare against the default
+# scikit-learn HistGradientBoostingRegressor:
+# lightgbm>=4.1,<4.7
+# xgboost>=2.0,<2.1

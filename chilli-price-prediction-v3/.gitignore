@@ -1,0 +1,18 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+venv/
+.venv/
+.env
+
+# Regeneratable outputs -- kept out of version control, produced by scripts/refresh_and_score.py
+# and scripts/run_eda.py / run_diagnostics.py. Remove these lines if you'd rather commit them
+# for a portfolio repo where a visitor can browse results without running anything.
+data/processed/
+models/artifacts/*.pkl
+reports/figures/*.png
+reports/forecasts/*.csv
+
+# Large raw file -- consider Git LFS if publishing this repo publicly (it's ~25MB, under
+# GitHub's hard limit but worth flagging).
+# data/raw/Cold_Stock_pavan.csv
